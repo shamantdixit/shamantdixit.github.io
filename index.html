@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamant Shreedhar Dixit - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Bookman Old Style', Georgia, serif;
+            background-color: #f5f2e7;
+            line-height: 1.6;
+            color: #161513;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .content {
+            flex: 3;
+            min-width: 300px;
+        }
+        .content p {
+            text-align: justify;
+            margin-top: 0;
+        }
+        .image {
+            flex: 2;
+            min-width: 300px;
+            max-width: 400px;
+            align-self: flex-start;
+            position: sticky;
+            top: 20px;
+            margin-left: 20px;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+        h1 {
+            color: #c55b3d;
+            text-align: center;
+            width: 100%;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact a {
+            margin: 0 10px;
+            color: #2c3050;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #c55b3d;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+            .image {
+                position: static;
+                margin: 0 auto;
+                max-width: 100%;
+                text-align: center;
+            }
+            img {
+                margin: 0 auto;
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Shamant Shreedhar Dixit</h1>
+    <div class="container">
+        <div class="content">
+            <p>I am a Graduate Student (M.Sc. in Physics) at the National Institute of Technology Karnataka, Surathkal in the Department of Physics. I have a Bachelor of Science degree in Physics, Mathematics and Chemistry from St. Joseph's College (Autonomous), Bangalore. My research interests lie in Theoretical and Mathematical Physics, and Scientific Computing in general.</p>
+            
+            <p>My Primary Research Interests lie in Theoretical Astrophysics and Cosmology. My other research interests lie in understanding the Mathematics of General Relativity, Compact Objects (Black holes, White dwarfs, and Neutron stars), and Dark Energy.</p>
+            
+            <p>My previous work was focused on understanding the physics of White dwarfs and their role in Cosmology. I have also worked to identify Geometric Techniques in Integral Calculus, with the help of which Integrals can be computed faster using principles of Geometry.</p>
+            
+            <p>I am available for Research Internships in Physics especially in the fields of Astrophysics, Cosmology and High Energy Physics. If a position is available, please feel free to contact me!</p>
+            
+            <div class="contact">
+                <a href="mailto:shamantdixit@gmail.com">E-Mail</a> |
+                <a href="https://github.com/Shamant-Dixit">GitHub</a> |
+                <a href="https://www.linkedin.com/in/shamant-dixit-a6ba3b204/">LinkedIn</a> 
+            </div>
+        </div>
+        <div class="image">
+            <img src="Shamant_ProfilePic.jpg" alt="Shamant Shreedhar Dixit">
+        </div>
+    </div>
+</body>
+</html>
