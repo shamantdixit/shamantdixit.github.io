@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shamant Shreedhar Dixit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
         body {
-            font-family: 'Bookman Old Style', Georgia, serif;
+            font-family: 'Source Sans Pro', sans-serif;
             background-color: #f5f2e7;
-            line-height: 1.6;
+            line-height: 1.7;
             color: #161513;
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
             align-items: flex-start;
         }
         .content {
@@ -25,8 +31,8 @@
             min-width: 300px;
         }
         .content p {
-            text-align: justify;
-            margin-top: 0;
+            text-align: left;
+            margin-bottom: 1.5em;
         }
         .image {
             flex: 2;
@@ -34,45 +40,77 @@
             max-width: 400px;
             align-self: flex-start;
             position: sticky;
-            top: 20px;
-            margin-left: 20px;
+            top: 40px;
         }
         img {
-            max-width: 80%;
+            max-width: 100%;
             height: auto;
             object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
         h1 {
+            font-family: 'Merriweather', serif;
             color: #c55b3d;
             text-align: center;
             width: 100%;
+            font-size: 2.8em;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(197, 91, 61, 0.3);
         }
         .contact {
-            margin-top: 20px;
-            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px; /* Space between each button */
         }
-        .contact a {
-            margin: 0 10px;
-            color: #2c3050;
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-decoration: none;
-            transition: color 0.3s ease;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
         }
-        .contact a:hover {
+        .contact-item:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: translateY(-3px);
+        }
+        .contact-item i {
+            font-size: 1.8em;
+            color: #2c3050;
+            transition: color 0.2s ease;
+        }
+        .contact-item:hover i {
             color: #c55b3d;
+        }
+        .contact-item span {
+            margin-top: 5px; /* Reduced spacing */
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #161513;
         }
         @media (max-width: 768px) {
             .container {
                 flex-direction: column-reverse;
+                gap: 20px;
             }
             .image {
                 position: static;
-                margin: 0 auto;
-                max-width: 100%;
+                margin: 0 auto 20px auto;
+                max-width: 300px;
                 text-align: center;
             }
-            img {
-                margin: 0 auto;
-                max-width: 80%;
+            h1 {
+                font-size: 2.2em;
             }
         }
     </style>
@@ -81,18 +119,27 @@
     <h1>Shamant Shreedhar Dixit</h1>
     <div class="container">
         <div class="content">
-            <p>I am a Graduate Student (M.Sc. in Physics) at the National Institute of Technology Karnataka, Surathkal in the Department of Physics. I have a Bachelor of Science degree in Physics, Mathematics and Chemistry from St. Joseph's College (Autonomous), Bangalore. My research interests lie in Theoretical and Mathematical Physics, and Scientific Computing in general.</p>
-            
-            <p>My Primary Research Interests lie in Theoretical Astrophysics and Cosmology. My other research interests lie in understanding the Mathematics of General Relativity, Compact Objects (Black holes, White dwarfs, and Neutron stars), and Dark Energy.</p>
-            
-            <p>My previous work was focused on understanding the physics of White dwarfs and their role in Cosmology. I have also worked to identify Geometric Techniques in Integral Calculus, with the help of which Integrals can be computed faster using principles of Geometry.</p>
-            
-            <p>I am available for Research Internships in Physics especially in the fields of Astrophysics, Cosmology and High Energy Physics. If a position is available, please feel free to contact me!</p>
+            <p>I am a graduate student (M.Sc. in Physics) in the Department of Physics at the National Institute of Technology Karnataka, Surathkal. I hold a Bachelor of Science degree in Physics, Mathematics and Chemistry from St. Joseph's College (Autonomous), Bangalore. My research interests lie in Theoretical and Mathematical Physics, and Scientific Computing.</p>
+
+            <p>My primary research interests lie in High Energy Physics and Gravitational Physics. Currently, my work focuses on the Fluid/Gravity Correspondence, an application of the AdS/CFT Correspondence. This duality provides a map between complex, dynamical black hole solutions in asymptotically AdS spacetimes and the behaviour of fluid flows in the strongly interacting boundary field theory. My broader academic interests also include Cosmology and Computational Physics.</p>
+
+            <p>My past research projects have spanned both computational and theoretical domains. My most recent work involved modelling Neutron Stars using computational techniques. Prior to that, my Bachelor's thesis investigated the physics of White Dwarfs and their role in Cosmology. In a separate project, I worked on identifying and applying geometric techniques to solve integrals more efficiently.</p>
+
+            <p>I am actively looking for PhD opportunities in theoretical high-energy physics (hep-th) and welcome inquiries regarding potential openings. In addition to this long-term goal, I am always interested in hearing about short-term research projects or internships.</p>
             
             <div class="contact">
-                <a href="mailto:shamantdixit@gmail.com">E-Mail</a> |
-                <a href="https://github.com/shamantdixit">GitHub</a> |
-                <a href="https://www.linkedin.com/in/shamant-dixit-a6ba3b204/">LinkedIn</a> 
+                <a href="mailto:shamantdixit@gmail.com" class="contact-item" aria-label="E-Mail">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-Mail</span>
+                </a>
+                <a href="https://github.com/shamantdixit" class="contact-item" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/shamant-dixit-a6ba3b204/" class="contact-item" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
             </div>
         </div>
         <div class="image">
